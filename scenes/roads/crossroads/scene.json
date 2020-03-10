@@ -1,0 +1,18 @@
+{
+  "display": {
+    "title": "Roads"
+  },
+  "contact": {
+    "name": "The Decentraland Team",
+    "email": "hello@decentraland.org"
+  },
+  "owner": "",
+  "scene": {
+    "parcels": [
+        "0,0"
+    ],
+    "base": "0,0"
+  },
+  "main": "game.js",
+  "tags": ["roads", "decentraland"]
+}
