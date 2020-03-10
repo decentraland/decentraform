@@ -65,6 +65,8 @@ The folder `targets` is created, overriding the values on `scene.json` files to 
 
 All the scenes on the `targets` folder are checked against the deployed scenes. A list of deploy targets is crafted, with the folders that would need to be deployed in a file named `plan.json`.
 
+<img src="./yarnrunplan.png" width="350px">
+
 ## Deployment: `yarn run deploy`
 
 This will:
