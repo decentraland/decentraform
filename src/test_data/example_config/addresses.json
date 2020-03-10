@@ -1,0 +1,7 @@
+{
+  "ropsten": {
+    "100,0": { "deployer": "0xdc1f85752244F55b85CC8681eC3Bba8B5d398716" },
+    "100,8": { "deployer": "0xdc1f85752244F55b85CC8681eC3Bba8B5d398716" },
+    "100,9": { "deployer": "0xdc1f85752244F55b85CC8681eC3Bba8B5d398716" }
+  }
+}

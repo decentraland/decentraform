@@ -1,0 +1,8 @@
+{
+  "source": "templates/thinking-about-mixing-networks",
+  "network": "mainnet",
+  "target": {
+    "base": "10,-47",
+    "parcels": ["10,-47"]
+  }
+}

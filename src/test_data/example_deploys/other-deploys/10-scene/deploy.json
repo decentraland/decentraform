@@ -1,0 +1,8 @@
+{
+  "source": "scenes/something-for-ropsten-0.0",
+  "network": "ropsten",
+  "target": {
+    "base": "-10,-20",
+    "parcels": ["-10,-20"]
+  }
+}

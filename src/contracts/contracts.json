@@ -1,0 +1,15 @@
+{
+  "outputPath": ".",
+  "contracts": {
+    "LAND": {
+      "source": "files",
+      "abiFile": "./LAND_sol_LANDRegistry.abi",
+      "initDataFile": "./LAND_sol_LANDRegistry.bin"
+    },
+    "Estate": {
+      "source": "files",
+      "abiFile": "./Estates_sol_EstateRegistry.abi",
+      "initDataFile": "./Estates_sol_EstateRegistry.bin"
+    }
+  }
+}

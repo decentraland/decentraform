@@ -1,0 +1,9 @@
+{
+    "source": "totem-for-ropsten-100.0",
+    "network": "ropsten",
+    "target": {
+      "base": "100,0",
+      "parcels": ["100,0"]
+    }
+  }
+  

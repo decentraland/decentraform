@@ -1,0 +1,7 @@
+{
+  "scene": {
+    "source": "totem-for-ropsten-100.0",
+    "network": "ropsten",
+    "target": { "base": "100,9", "parcels": ["100,9"] }
+  }
+}

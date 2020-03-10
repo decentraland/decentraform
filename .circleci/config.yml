@@ -1,0 +1,53 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+jobs:
+  build-test-and-plan:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: yarn install
+            - run: yarn test
+            - run: yarn run plan
+
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - config
+            - deploys
+            - node_modules
+            - scenes
+            - src
+            - targets
+            - deploy.ts
+            - package.json
+            - plan.ts
+            - tsconfig.json
+            - yarn.lock
+      - store_artifacts:
+          path: targets/plan.json
+          destination: plan.json
+
+  deploy:
+    executor:
+      name: node/default
+    steps:
+      - attach_workspace:
+          at: ./
+      - run: yarn run deploy
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build-test-and-plan
+      - approve-deploy:
+          type: approval
+          requires:
+            - build-test-and-plan
+      - deploy:
+          requires:
+            - approve-deploy

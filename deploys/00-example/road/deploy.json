@@ -1,0 +1,8 @@
+{
+  "source": "scenes/roads/crossroads",
+  "network": "ropsten",
+  "target": {
+    "base": "50,-1",
+    "parcels": ["50,-1"]
+  }
+}

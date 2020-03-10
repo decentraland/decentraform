@@ -1,0 +1,9 @@
+{
+  "mainnet": {
+  },
+  "ropsten": {
+    "50,-1": {
+      "deployer": "0x73578fD0787E309Cba6cfcDDE76ad3B2fF3781ff"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "decentraform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:decentraland/decentraform.git",
+  "author": "The Decentraland Team <developers@decentraland.org>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "plan": "ts-node plan.ts",
+    "deploy": "ts-node deploy.ts",
+    "test": "npx mocha --require ts-node/register 'src/*.spec.ts'",
+    "watch:test": "npx nodemon -e ts,spec.ts --ignore 'src/test_data/*' --exec mocha -- --require ts-node/register 'src/*.spec.ts'"
+  },
+  "dependencies": {
+    "@types/chai": "^4.2.10",
+    "@types/mocha": "^7.0.2",
+    "@types/node-fetch": "^2.5.5",
+    "@types/tmp": "^0.1.0",
+    "chai": "^4.2.0",
+    "decentraland": "^3.4.1",
+    "decentraland-ecs": "^6.4.7",
+    "mocha": "^7.1.0",
+    "node-fetch": "^2.6.0",
+    "tmp": "^0.1.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3",
+    "web3x": "^4.0.6"
+  },
+  "prettier": {
+    "semi": false,
+    "tabWidth": 2,
+    "printWidth": 120,
+    "singleQuote": true
+  }
+}
